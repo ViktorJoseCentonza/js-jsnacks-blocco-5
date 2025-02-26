@@ -21,3 +21,30 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
+
+/*
+//global variable
+let marcoLanciClass 
+students.forEach(element => {
+  if (element.name == `Marco Lanci`) {
+    marcoLanciClass=element.class
+  }
+})
+*/
+
+/*
+//almost works, but returns undefined in the array when not found, would have to use .filter to remove undefined elements
+const marcoLanciClass = students.map((element) => { if (element.name == `Marco Lanci`) { return element.class }})
+*/
+
+
+students.forEach(element => {
+  if (element.name == `Marco Lanci`) {
+    const marcoLanciClass = element.class
+    console.log(marcoLanciClass);
+  }
+})
+
+
+
+

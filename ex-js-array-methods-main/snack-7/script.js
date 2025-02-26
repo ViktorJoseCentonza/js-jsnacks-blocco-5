@@ -21,3 +21,20 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+/*
+let thisStudent 
+
+students.forEach(element => {
+  if (element.id == 2) {
+    thisStudent = element
+  }
+});
+*/
+
+//i like this more
+const thisStudent = students.filter((element) => element.id == 2)
+console.log(thisStudent);
+
+
+
